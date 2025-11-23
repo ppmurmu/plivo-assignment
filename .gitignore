@@ -1,0 +1,13 @@
+#output file
+out/model.safetensors
+
+# Ignore virtual environment folders
+venv/
+env/
+.venv/
+.env/
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+*.so

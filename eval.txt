@@ -1,0 +1,12 @@
+Per-entity metrics:
+CITY            P=0.950 R=1.000 F1=0.974
+CREDIT_CARD     P=1.000 R=1.000 F1=1.000
+DATE            P=1.000 R=1.000 F1=1.000
+EMAIL           P=1.000 R=0.759 F1=0.863
+PERSON_NAME     P=0.880 R=0.880 F1=0.880
+PHONE           P=0.932 R=0.953 F1=0.943
+
+Macro-F1: 0.943
+
+PII-only metrics: P=0.962 R=0.926 F1=0.943
+Non-PII metrics: P=0.950 R=1.000 F1=0.974
