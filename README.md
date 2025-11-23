@@ -75,13 +75,15 @@ To guarantee **>80% Precision**, I implemented a **Regex Validation Layer** in p
 * *Result:* This eliminated false positives (e.g., interpreting "call me later" as a phone entity), pushing PII Precision to **1.0** for most categories.
 
 
-## 🏆 Final Performance
+## Final Performance
 
 | Metric | Target | **My Result** |
 | :--- | :--- | :--- |
 | **P95 Latency (CPU)** | $\le 20.00$ ms | **11.22 ms** |
 | **PII Precision** | $\ge 0.80$ | **0.962** |
 | **Macro F1** | N/A | **0.943** |
+
+![Performance Heatmap](ner_performance_heatmap.png)
 
 ## Output folder link
 [output folder](https://drive.google.com/drive/folders/1bJ0mcFfXeg-7RA56NHl3ZbF8bKi8Qosx?usp=sharing)
