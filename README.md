@@ -1,4 +1,4 @@
-# PII NER Assignment Skeleton
+# PII NER Assignment
 
 This repo is modified version of the skeleton code I got for plivo assignment for a token-level NER model that tags PII in STT-style transcripts.
 
@@ -8,7 +8,7 @@ This repo is modified version of the skeleton code I got for plivo assignment fo
 pip install -r requirements.txt
 ```
 
-## Train
+### Train
 
 ```bash
 python src/train.py \
@@ -21,7 +21,7 @@ python src/train.py \
   --epochs 3
 ```
 
-## Predict
+### Predict
 
 ```bash
 python src/predict.py \
@@ -32,7 +32,7 @@ python src/predict.py \
   --device cpu
 ```
 
-## Evaluate
+### Evaluate
 
 ```bash
 python src/eval_span_f1.py \
@@ -40,7 +40,7 @@ python src/eval_span_f1.py \
   --pred out/dev_pred.json
 ```
 
-## Measure latency
+### Measure latency
 
 ```bash
 python src/measure_latency.py \
@@ -77,8 +77,8 @@ To guarantee **>80% Precision**, I implemented a **Regex Validation Layer** in p
 
 ## 🏆 Final Performance
 
-| Metric | Target | **My Result** | Status |
+| Metric | Target | **My Result** |
 | :--- | :--- | :--- | :--- |
 | **P95 Latency (CPU)** | $\le 20.00$ ms | **11.22 ms** |
 | **PII Precision** | $\ge 0.80$ | **0.962** |
-| **Macro F1** | N/A | **0.943** | Strong Performance |
+| **Macro F1** | N/A | **0.943** |
